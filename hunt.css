@@ -1,0 +1,920 @@
+/* common css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 25px;
+    font-size: 14px;
+    margin: 0 auto;
+    color: #353535;
+    width: 570px;
+    padding-top: 25px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 400;
+   
+}
+
+
+
+
+
+
+/*................................................... nav bar..................................................................... */
+.header{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 204, 0, 0.218);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.menu {
+    display: flex;
+    gap: 30px;
+
+}
+.menu a{
+    color: #ffffff;
+    position: relative;
+    transition: all 0.2s linear ;
+}
+.menu a:hover{
+    color: #fec600;
+
+
+}
+
+.menu a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: 66px;
+    background-color:#fec600;
+    transition: all 0.2s linear ;
+    border-radius: 1px;
+}
+.menu a:hover:after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*......................................................... banner.....................................................................  */
+
+.hero{
+    background-image: url(Images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.hero .icon{
+    position: absolute;
+    background-color: white;
+    top: 360px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    font-weight: 500;
+    margin:  0 auto;
+    padding-left:5px ;
+    transition: all 0.2s linear;
+
+}
+.hero .icon:hover{
+
+    background-color: #fec600;
+    
+
+}
+.hero .icon.left{
+    left: 5%;
+}
+.hero .icon.right{
+    left: 95%;
+}
+.banner{
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+
+.banner .container h6{
+    font-weight: 400;
+    font-size: 36px;
+    color: rgb(254, 254, 254);
+    
+}
+.banner h1{
+    font-weight: bold;
+    font-size: 55px;
+    color: #fec600;
+
+}
+.banner p{
+    color:rgb(182, 178, 178);
+    width: 550px;
+    
+}
+.banner .text{
+    padding-top: 135px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*............................................. button........................................................... */
+ .buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+.button{
+    border: 1px solid white;
+    color: white;
+    padding: 20px 35px;
+}
+.button:hover{
+    background-color: #fec600;
+    color: black;
+    border:1px solid black;
+    transition: 0.3s all linear;
+}
+
+
+
+
+
+
+
+/*............................................ information start............................................ */
+.information h3{
+    color: black;
+
+}
+.information p{
+   width: 570px; 
+   padding-top: 20px;
+   color: #2a1a1b;
+
+}
+
+
+
+
+/*.......................................... msgbox...................................................... */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.information .msgbox{
+    background-color: #eeeeee;
+    
+    width: 370px;
+    height: 225px;
+    align-items: center;
+    transition: all 0.1s linear;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* .....................................prblm start ................................................*/
+
+
+
+
+
+.information .msgbox:hover{
+    box-shadow: 1px 1px 20px 1px black;
+    
+
+} 
+.information .msgbox.one:hover.littlebox.one{
+    background-color: #fec600;
+}
+
+/*......................................... prblm close.......................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+.information .one{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 94%, 56% 94%, 50% 100%, 44% 94%, 0 94%);
+    margin: 60px auto 10px auto;
+    
+}
+ .information .two{
+    
+    padding-right: 25px;
+    text-align: right;
+    margin-right: 10px;
+    clip-path: polygon(93% 0, 93% 43%, 100% 50%, 93% 57%, 93% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+ .information .three{
+    padding-left: 25px;
+    text-align: left;
+    margin-left: 10px;
+    clip-path: polygon(6% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 6% 100%, 6% 60%, 0 52%, 6% 44%);
+}
+.information .four{
+    margin: 10px auto 0 auto;
+    clip-path: polygon(50% 0%, 58% 8%, 100% 9%, 100% 100%, 79% 100%, 50% 100%, 22% 100%, 0 100%, 0 9%, 43% 8%);
+}
+.information h4{
+    font-size: 15px;
+    padding-top: 40px;
+    font-weight: 500;
+    color: black;
+    width: 300px;
+    margin: 0 auto;
+
+}
+.information .msgbox p{
+    width: 300px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    color: #353535;
+
+}
+
+
+
+
+
+
+
+
+/*........................................................... circle.......................................................*/
+.information .circle{
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding-top: 25px;
+    position: relative;
+}
+.littlebox{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.information .circle .a{
+    position: absolute;
+    top: 175px;
+    left: -10px;
+
+}
+.information .circle .b{
+    position: absolute;
+    top: 175px;
+    right: -10px;
+}
+.information .circle .c{
+    position: absolute;
+    top: -10px;
+    right:175px;
+}
+.information .circle .d{
+    position: absolute;
+    bottom: -10px;
+    left: 175px;
+}
+
+
+
+
+
+
+
+
+
+
+/*............................................................... portfolio...................................................... */
+.portfolio{
+    background-image: url(Images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.portfolio h3{
+    color: white;
+    padding-top: 100px;
+
+}
+
+.portfolio p{
+    width: 570px;
+    padding-top: 20px;
+    color: #f1f1f1;
+
+}
+.portfolio .pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    height: 870px;
+    gap: 30px;
+    padding-top:60px ;
+    padding-bottom: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+/*.................................................................. services............................................ */
+
+.service .services{
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 0 auto;
+}
+.service .services .sv .text{
+ font-size: 18px;
+ font-weight: 500;  
+ padding:  130px 25px 130px 25px;
+
+}
+.service .services .sv .msgbox{
+    background-color: #f1f1f1;
+    /* box-shadow: 0px 0 2px 0px; */
+    width: 490px;
+    height: 220px;
+    align-items: center;
+    
+
+}
+.service .services .sv .msgbox p{
+    padding-top: 60px;
+    width: 410px;
+}
+
+.service .sv .msgbox.one{
+    padding-right: 20px;
+    text-align: right;
+    clip-path: polygon(93% 0, 93% 43%, 100% 50%, 93% 57%, 93% 100%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+
+.service .sv .msgbox.two{
+    clip-path: polygon(6% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 6% 100%, 6% 60%, 0 52%, 6% 44%);
+    text-align: left;
+    padding-left: 20px;
+
+}
+.service .sv .msgbox.three{
+    clip-path: polygon(6% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 6% 100%, 6% 60%, 0 52%, 6% 44%);
+    text-align: left;
+    padding-left: 20px;
+
+}
+.service .sv.one{
+    padding-top:20px ;
+    padding-right: 95px;
+    text-align: right;
+}
+.service .sv.three{
+    padding-left: 95px;
+    padding-top:55px ;
+    text-align: left;
+}
+.service .sv.two{
+    height: 825px;
+    width: 0px;
+    border-left: 1px black dashed;
+    position: relative;
+  
+}
+.service .sv .circle.arrow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    border: 1px solid black;
+    background-color: #eeeeee;
+    padding: 10px;
+
+}
+.service .sv .circle.arrow.one{
+    top: -20px;
+    
+}
+.service .sv .circle.arrow.two{
+  bottom: -20px;
+}
+.service .sv .circle.icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: -35px;
+    /* border: 1px solid black; */
+    background-color: #eeeeee;
+    padding: 10px;
+}
+.service .sv .circle.icon.one{
+    top: 125px;
+
+}
+.service .sv .circle.icon img{
+    height: 40px;
+    width: 40px;
+
+}
+.service .sv .circle.icon.two{
+    top: 375px;
+
+}
+.service .sv .circle.icon.three{
+    top: 630px;
+
+}
+.service .sv .circle:hover{
+    background-color: #fec600;
+    border: #eeeeee;
+}
+
+
+
+
+
+/*................................................................. review.............................................................. */
+.review{
+    background-image: url(Images/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.review .reviewfullbox{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+
+}
+.review .reviewfullbox .line{
+    height: 650px;
+    width: 0px;
+    border-left: 1px white dashed;
+    position: relative;
+    padding-left: 135px;
+}
+.review .reviewfullbox .line .circle{
+     border-radius: 50%;
+    position: absolute;
+
+}
+.review .reviewfullbox .line .circle.arrow:hover{
+    background-color: #fec600;
+    border: black;
+}
+.review .reviewfullbox .line .circle.arrow{
+    background-color: #2a1a1b;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    left: -20px;
+}
+.review .reviewfullbox .line .circle.arrow.one{
+    top: 0;
+
+}
+.review .reviewfullbox .line .circle.arrow.two{
+    top: 610px;
+
+}
+.review .reviewfullbox .line .circle.person{
+    height: 100px;
+    width: 100px;
+    left: -50px;
+
+}
+.review .reviewfullbox .line .circle.person.one{
+  top: 100px;
+}
+.review .reviewfullbox .line .circle.person.two{
+    top: 270px;
+}
+.review .reviewfullbox .line .circle.person.three{
+top: 450px;
+}
+
+.review .reviewfullbox .text{
+    margin-top: 155px;
+    margin-bottom: 255px;
+    padding-left: 100px;
+    padding-right: 20px;
+    height: 340px;
+    background-color:#f1f1f1 ;
+    text-align: left;
+    position: relative;
+    clip-path: polygon(6% 0, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 6% 100%, 6% 60%, 0 52%, 6% 44%);
+
+}
+.review .reviewfullbox .shadow{
+    position: absolute ;
+    top: 90px;
+    left: 250px;
+    z-index: 1;
+}
+.review .reviewfullbox .text h6{
+
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 60px;
+
+
+}
+.review .reviewfullbox .text p{
+
+    width: 770px ;
+}
+.review .reviewfullbox .text .sign{
+    text-align: right;
+    padding-top: 30px;
+}
+.review .reviewfullbox .text i{
+    color: #fec600;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ....................................................................pricing plan .........................................................................*/
+
+.pricing .fullbox{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    gap: 30px;
+
+}
+.pricing .fullbox .plan {
+    background-color: white;
+    position: relative;
+}
+.pricing .fullbox .plan .one{
+   
+    background-color:#353535 ;
+    height: 140px;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%)
+
+}
+.pricing .fullbox h6{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.pricing .fullbox p{
+    width: 370px;
+
+}
+.p{
+    padding-top: 30px;
+}
+h5{
+    font-size: 29px;
+    font-weight: 400;
+}
+ .co{
+    color: white;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color:#353535; 
+    padding-top:20px ;
+}
+.pricing .fullbox .plan .circle{
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    left: 135px;
+    top: 75px;
+    height: 102px;
+    width: 102px;
+    border: 2px #353535 solid;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+.pricing .fullbox .plan .circle h4{
+    font-size: 12px;
+    color: #ececec ;
+    font-weight: 400;
+}
+.pricing .fullbox .plan .two{
+    height: 80px;
+    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+    background-color:  #353535;
+}
+.pricing .fullbox .plan:hover>.clr{
+    background-color: #fec600;
+    color: black;
+
+
+}
+.pricing .fullbox .plan:hover{
+    box-shadow: 1px 1px 20px 1px black;
+}
+.pricing .fullbox .plan:hover>.circle{
+    border:1px solid #fec600 ;
+    
+
+
+}
+
+/* .........................................prblm strt........................... */
+.pricing .fullbox .plan:hover>.circle h6,
+.pricing .fullbox .plan:hover>.circle h4{
+    color: black;
+
+}
+.pricing .fullbox .plan:hover>.circle .co{
+    background-color: #fec600;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*................................................................. table........................................................... */
+
+.table{
+    background-image: url(Images/bg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.table .container{
+    display: flex;
+    gap: 30px;
+}
+.table .tb{
+    height: 120px;
+    width: 210px;
+    border: 1px solid white;
+    rotate: -3deg;
+}
+.table .tb h5{
+    padding-top: 20px;
+    color: #ececec;
+}
+ h6{
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #ececec;
+
+
+}
+.table .one{
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+.table .two{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.table .three{
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+.table .four{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.table .five{
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+
+
+
+
+ /* ..............................................team........................................................*/
+
+
+ .team .tmmmbr{
+    display: flex;
+    padding-top: 60px;
+    gap: 30px;
+ }
+.team .mmbr{
+    height: 270px;
+    width: 350px;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+
+
+
+
+/*.................................................................. sponser......................................................... */
+
+.sponser{
+    flex-direction:row;
+    display: flex;
+    gap: 30px;
+    rotate: -3deg;
+    background-color:#f1f1f1 ;
+    margin-top: 155px;
+
+}
+.sponser .container{
+    padding: 30px;
+    flex-direction:row;
+    display: flex;
+    gap: 30px;
+    
+
+}
+.sponser .spnsr{
+    padding-top: 37px;
+    height: 120px;
+    width: 200px;
+    border: 1px solid rgb(70, 70, 70);
+}
+.sponser .spnsr:hover{
+    box-shadow: 0 0 20px 0;
+    border: 1px solid #fec600;
+}  
+
+
+
+
+
+
+/*....................................................... footer...................................................................... */
+
+
+
+.footer .rtet{
+    rotate: -3deg;
+    background-color: #222222;
+    padding: 50px;
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+.footer{
+    background-color:  #222222;
+}
+.footer .contact{
+    display: flex;
+    justify-content: center;
+    padding: 50px 25px;
+
+}
+.footer .contact .addrs i{
+    padding: 7px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fec600;
+    margin-bottom: 20px;
+
+}
+
+.footer .contact .addrs{
+    width: 300px;
+    border-left: 1px solid  rgb(102, 102, 102);
+}
+.footer .contact .addrs.location{
+    border-left: 0px;
+}
+.footer .contact .addrs p{
+    width: 250px;
+    padding-top: 0;
+    color: #ececec;
+}
+ .footer .icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+.footer .icon a{
+    color:#222222;
+}
+ .footer .icon{ 
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 10px;
+    font-style: #222222;
+    background-color: #ececec;
+}
+.footer .icon:hover{
+    background-color: #fec600;
+}
+
+
+
+.footer .copyrightbg {
+    margin-top:30px ;
+    width: 100%;
+    background-color: #353535;
+    padding: 20px ;
+    text-align: center;
+}
+.footer .copyrightbg p{
+    padding: 0;
+    color: #979797;
+}
+.footer .copyrightbg p a{
+    color: #fec600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
